@@ -1,0 +1,17 @@
+use children props give us better optimisation then print it all , cause when u refresh the component parent ( state) , even the component that it becomes children will render and that cause perfermance issue sometimes 
+Test component 
+
+<div>{counter}
+<slowComponent/>
+
+every time u update counter the slowComponent render also so to avoid this 
+
+
+Test component 
+
+<counter>
+<slowComponent/>
+<counter/>
+
+and inside counter u update the state and he will never update slowComponent if its not necessary
+
