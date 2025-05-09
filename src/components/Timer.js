@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useEffect } from "react";
-export default function Timer({ time, dispatch, points }) {
+import { useQuizContext } from "../context/useQuizContext";
+export default function Timer() {
+  const { time, points, dispatch } = useQuizContext();
   //i want that timer to convert it to minutes and seconds
   const minutes = Math.floor(time / 60);
   const seconds = time % 60;
