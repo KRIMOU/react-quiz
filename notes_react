@@ -15,3 +15,8 @@ Test component
 
 and inside counter u update the state and he will never update slowComponent if its not necessary
 
+2 - use useCallback for function to not reload the function if the depends are the same 
+and useMemo for variables also and Memo for components 
+
+2- use lazy loading for pages and suspense for the routes to devides the size of bundles and to load the app quickly 
+3- useEffect is the last issue of react , u should check for all ways before using useEffect
